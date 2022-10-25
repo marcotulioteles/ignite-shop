@@ -2,7 +2,6 @@ import { styled } from "..";
 
 export const HomeContainer = styled('main', {
   display: "flex",
-  gap: '3rem',
   width: '100%',
   maxWidth: 'calc(100vw - ((100vw - 1180px) / 2))',
   marginLeft: 'auto',
@@ -12,9 +11,9 @@ export const HomeContainer = styled('main', {
 export const Product = styled('a', {
   background: 'linear-gradient(180deg, #1ea483 0%, #7465d4 100%)',
   borderRadius: 8,
-  padding: '0.25rem',
   cursor: 'pointer',
   position: "relative",
+  overflow: 'hidden',
 
   display: "flex",
   alignItems: "center",
@@ -35,7 +34,6 @@ export const Product = styled('a', {
     alignItems: "center",
     justifyContent: 'space-between',
     backgroundColor: 'rgba(0, 0, 0, 0.6)',
-    overflow: 'hidden',
     
     transform: 'translateY(110%)',
     opacity: 0,
@@ -59,24 +57,4 @@ export const Product = styled('a', {
       opacity: 1,
     }
   }
-  // footer: {
-  //   position: "absolute",
-  //   padding: '2rem', 
-
-  //   borderRadius: 6,
-
-  //   display: "flex",
-  //   alignItems: 'center',
-  //   justifyContent: 'space-between', 
-
-  //   backgroundColor: 'rgba(0,0,0,0.6)',
-
-  // },
-
-  // '&:hover': {
-  //   footer:  {
-  //     transform: 'tanslateY(0%)',
-  //     opacity: 1,
-  //   }
-  // }
 })
